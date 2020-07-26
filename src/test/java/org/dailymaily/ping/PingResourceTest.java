@@ -1,4 +1,4 @@
-package org.acme;
+package org.dailymaily.ping;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
@@ -7,15 +7,15 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
 
 @QuarkusTest
-public class ExampleResourceTest {
+public class PingResourceTest {
 
     @Test
-    public void testHelloEndpoint() {
+    public void testPingEndpoint() {
         given()
-          .when().get("/hello")
+          .when().get("/ping")
           .then()
              .statusCode(200)
-             .body(is("hello"));
+             .body(is("ping"));
     }
 
 }
