@@ -1,0 +1,9 @@
+footer {
+    background-color: blue;
+    height: 50px;
+    width: 100%;
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+}
